@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+}
+
+body, html {
+	height: 100%;
+}
+
+#logo {
+	width: 25%;
+	height: 20%;
+	background-color: white;
+	display: inline-block;
+}
+	
+
+#data-dashboard {
+	background-color: #FFC107;
+	width: 70%;
+	height: 20%;
+	display: inline-block;	
+}
+
+#options-location-menu > li {
+	text-decoration: none;
+}
+
+#section-left {
+	width: 25%;
+	height: 80%;
+
+}
+
+ul {
+	list-style: none;
+}
+
+li:hover{
+	background-color: lightgrey;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover{
+	color:white;
+}
+
+
+
+
+

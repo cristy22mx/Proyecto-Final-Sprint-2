@@ -10,7 +10,7 @@
     <nav>
       <div id="logo">
 <!--Aquí va el logo, pero puse un p para ubicar el espacio-->
-       <p id="este-logo">Logo Laboratoria</p>
+       <img src="assets/images/logo-laboratoria.svg">
       </div>
       <div id="data-dashboard">
         <p id="main-title">DATA DASHBOARD</p>
@@ -20,28 +20,54 @@
 <!--inicio sección derecha, con los menus-->
     <section id="section-left">
 <!-- menú sedes -->
-      <div id="location-menu">
-        <p>SEDE</p>
-        <ul id="options-location-menu">
-          <li><a href="#">Santiago de Chile</a></li>
-          <li><a href="#">Arequipa</a></li>
-          <li><a href="#">Lima</a></li>
-          <li><a href="#">México</a></li>
-        </ul>
-      </div>
-<!-- menú generaciones -->
-      <div>
-        <p>GENERACIONES</p>
-        <ul id="options-generation-menu">
-          <li><a href="#">2015-1</a></li>
-          <li><a href="#">2015-2</a></li>
-          <li><a href="#">2016-1</a></li>          
-          <li><a href="#">2016-2</a></li>
-          <li><a href="#">2017-1</a></li>           
-          <li><a href="#">2017-2</a></li> 
-        </ul>
-      </div>
+    <div id="location-menu">
+        <div>
+          <p>SEDE</p>
+        <select id="SEDE" onchange ="seleccionarOpcion(event)">
+            <option >Selecciona una sede </option>
+            <option value = "sdc" data-sede="santiago" data-generacion ="2016-2">Santiago de Chile - 2016-2 </option>
+            <option value = "sdc" data-sede="santiago" data-generacion ="2017-1">Santiago de Chile - 2017-1 </option>
+            <option value = "sdc" data-sede="santiago" data-generacion ="2017-2">Santiago de Chile - 2017-2 </option>
+            <option value = "arq" data-sede="arequipa" data-generacion ="2016-1">Arequipa - 2016-1</option>
+            <option value = "arq" data-sede="arequipa" data-generacion ="2017-2">Arequipa - 2017-2</option>
+            <option value = "lim" data-sede="lima" data-generacion ="2016-1">Lima - 2016-1</option>
+            <option value = "lim" data-sede="lima" data-generacion ="2017-1">Lima - 2017-1</option>
+            <option value = "lim" data-sede="lima" data-generacion ="2017-2">Lima - 2017-2</option>
+            <option value = "mex" data-sede="mexico" data-generacion ="2016-2">México - 2016-2</option>
+            <option value = "mex" data-sede="mexico" data-generacion ="2017-1">México - 2017-1</option>
+            <option value = "mex" data-sede="mexico" data-generacion ="2017-2">México - 2017-2</option>
+        </select> 
+        </div>
+    </div>
     </section>
+    <section id="section-right">
+      <h1> DATA</h1>
+      <hr>
+      <div id="overview">
+        <div id="data">
+          <p>aqui va la data</p>
+        </div>
+        <div id="data">
+          <p>aqui va la data</p>
+        </div>
+        <div id="data">
+          <p>aqui va la data</p>
+        </div>
+        <div id="data">
+          <p>aqui va la data</p>
+        </div>
+        <div id="data">
+          <p>aqui va la data</p>
+        </div>
+        <div id="data">
+          <p>aqui va la data</p>
+        </div>
+      </div>
+      <div id="dataBig">
+          <p>aqui va la data</p>
+      </div>
+
+     </section>
 
 		<!-- Base de datos
 		<script src="./js/data.js"></script>

@@ -2,6 +2,7 @@
  * Funcionalidad de tu producto
  */
 
+<<<<<<< HEAD
 //Puedes hacer uso de la base de datos a través de la variable `data`
 var filtrarLab = document.getElementById("sede");
 filtrarLab.addEventListener("change",clicOpcion);
@@ -110,3 +111,7 @@ var activastotal = activas
 
 
 // // console.log(totalStudents)*/
+=======
+// Puedes hacer uso de la base de datos a través de la variable `data`
+console.log(data);
+>>>>>>> 0704cb3eef221cd9cbf114190035ec2c711db245

@@ -1,3 +1,4 @@
+
 /*
  * Funcionalidad de tu producto
  */
@@ -19,27 +20,19 @@ function clicOpcion() {
  	// console.log("Ratings selecionados " + totalStudentsRatings)
  	// console.log(totalStudentsGlobal);
  
-  
-
 console.log("Estudiantes totales " + totalStudents)
-//var studentsNum = generationG.students
-// var totalStudentsSede = 0;
+
+var totalStudentsShow = document.getElementById("totalShow");
+totalStudentsShow.textContent=totalStudents;
 var activas = 0; // Total general
 var inActivas = 0;
-// var totalHyT7 = 0;
 var porcentajeActivos = 0;
 var porcentajeInactivos = 0;
 var promTotalH = 0;
 var promTotalT = 0;
-var totalGenSede =  0;
-var totalGenSedeH =  0;
-var totalGenSedeT =  0;
 
 
 //Para que cuente cuantas alumnas hay en lista
-
-// totalStudentsSede = Object.keys(totalStudents);
-//console.log("El total de alumnas es " + totalStudentsSede)
 
 for (var i = 0; i < totalStudents; i++ ) {
 var alumnActiva = data[sedes][generation].students[i].active;
@@ -55,55 +48,52 @@ var alumnActiva = data[sedes][generation].students[i].active;
 	}
 
 console.log("Alumnas Activas "+ activas)
+
+var totalActivasShow = document.getElementById("activasShow");
+totalActivasShow.textContent=activas;
+
 console.log("Alumnas Inactivas "+ inActivas)
+var totalInactivasShow = document.getElementById("inActivasShow");
+totalInactivasShow.textContent=inActivas;
+
 porcentajeActivos = ((activas / totalStudents) * 100).toFixed(1);
 porcentajeInactivos = ((inActivas / totalStudents) * 100).toFixed(1);
 
 console.log("Porcentaje de Activas " + porcentajeActivos)
-console.log("Porcentaje de Inactivas " + porcentajeInactivos)
+var totalActivasShow = document.getElementById("porActivasShow");
+totalActivasShow.textContent=porcentajeActivos;
 
+console.log("Porcentaje de Inactivas " + porcentajeInactivos)
+var porcentajeInactivasShow = document.getElementById("porInActivasShow");
+porcentajeInactivasShow.textContent=porcentajeInactivos;
 
 for (var i = 0; i < totalStudents; i++ ) {
 	var totalH = 0;
 	var totalT = 0;
 	
 
-if (totalStudents2[i].active === true){
-	 for (var j = 0; j < totalStudents2[i]["sprints"].length; j++){
+	if (totalStudents2[i].active === true){
+		 for (var j = 0; j < totalStudents2[i]["sprints"].length; j++){
 
-	 	//console.log("tamaño"+ studentsNum[i]["sprints"].length);
-	 totalH += totalStudents2[i]["sprints"][j]["score"]["hse"];
-	 totalT += totalStudents2[i]["sprints"][j]["score"]["tech"];
-	 }
-	promTotalH = totalH / totalStudents2[i]["sprints"].length;
-	promTotalT = totalT / totalStudents2[i]["sprints"].length;
+		 	//console.log("tamaño"+ studentsNum[i]["sprints"].length);
+		 totalH += totalStudents2[i]["sprints"][j]["score"]["hse"];
+		 totalT += totalStudents2[i]["sprints"][j]["score"]["tech"];
+		 }
+		promTotalH = totalH / totalStudents2[i]["sprints"].length;
+		promTotalT = totalT / totalStudents2[i]["sprints"].length;
 
 
-	 }
+		 }
 
 
 }
 console.log("Promedio total en HSE " + promTotalH);
-console.log("Promedio total en TECH " + promTotalT);
+var promHseShow = document.getElementById("promHseShow");
+promHseShow.textContent=promTotalH;
 
-var activastotal = activas;
+console.log("Promedio total en TECH " + promTotalT);
+var promTechShow = document.getElementById("promTechShow");
+promTechShow.textContent=promTotalT;
+
 
 }
-
-
-
-
-
-
-// // //totalStudents = Object.keys(studentsNum).length;
-
-
-
-
-
-// // // /*for (var i = 0; i = studentsNum.length; i++ ) {
-// // // 	totalStudents ++;		
-// // }
-
-
-// // console.log(totalStudents)*/
